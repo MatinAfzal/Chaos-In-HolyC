@@ -1,9 +1,9 @@
-fX1 = 600, fY1 = 60, fX2 = 10, fY2 = 60;
-sX1 = 600, sY1 = 60, sX2 = 16, sY2 = 60;
-ballX = 640/2, ballY = 480/2, ballDiameter = 20;
-lives = 1;
-ballSpeedX = 1, ballSpeedY = 1;
-speed = 10;
+I32 fX1 = 600, fY1 = 60, fX2 = 10, fY2 = 60;
+I32 sX1 = 600, sY1 = 60, sX2 = 16, sY2 = 60;
+I32 ballX = 640/2, ballY = 480/2, ballDiameter = 20;
+I32 lives = 1;
+I32 ballSpeedX = 1, ballSpeedY = 1;
+I32 speed = 10;
 U8 ch, sc; // CHAR & ASCII for ScanKey
 
 U0 EnevHandler(CDC* dc) {

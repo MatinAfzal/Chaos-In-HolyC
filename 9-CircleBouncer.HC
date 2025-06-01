@@ -1,11 +1,11 @@
-iT32 screenWidth = 640;
-iT32 screenHeight = 480;
-iT32 posX = screenWidth/2;
-iT32 posY = screenHeight/2;
-iT32 diameter = 50;
+IT32 screenWidth = 640;
+IT32 screenHeight = 480;
+IT32 posX = screenWidth/2;
+IT32 posY = screenHeight/2;
+IT32 diameter = 50;
 
-iT32 speedX = 1;
-iT32 speedY = 1;
+IT32 speedX = 1;
+IT32 speedY = 1;
 
 U0 EventHandler(CDC* dc) {
     posX += speedX;
@@ -36,14 +36,14 @@ U0 EventHandler(CDC* dc) {
 U0 Main() {
     DocClear;
     WinMax;
-    CDC* .dc = DCAlias;
+    CDC* dc = DCAlias;
     dc->color = YELLOW;
 
     while(!ms.rb) {
         EventHandler(dc);
         DCFill;
         DCFillCircle(dc, posX, posY, 0, diameter);
-        SGrPrint(dc, posX, posY, "MatinAfzal");
+        GrPrint(dc, posX, posY, "MatinAfzal");
         Sleep(10);
     }
 

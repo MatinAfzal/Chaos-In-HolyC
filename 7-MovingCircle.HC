@@ -5,7 +5,7 @@ I16 speed = 50;
 I16 ch, sc;
 
 U0 DrawCircle(CDC* dc) {
-    GrCircle(dc, posX, posY, 30);
+    GrFillCircle(dc, posX, posY, 0, 30);
 }
 
 U0 InterruptHandler() {
@@ -38,6 +38,7 @@ U0 Main() {
     dc->color = GREEN;
 
     while (!ms.rb) {
+	DCFill;
         InterruptHandler();
         DrawCircle(dc);
         Sleep(1);

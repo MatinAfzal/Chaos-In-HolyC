@@ -1,8 +1,8 @@
-iT32 diameter = 10;
+I32 diameter = 10;
 U8* color = "BLACK";
-iT8 colorCounter = 0;
+IT8 colorCounter = 0;
 
-iT64 ch, sc; // CHAR and ASCII
+I64 ch, sc; // CHAR and ASCII
 
 U0 LazyForward(CDC* dc) {
     ClearInformation(dc);
@@ -83,7 +83,7 @@ U0 ClearInformation(CDC* infoDC) {
 }
 
 U0 Paint() {
-    CDC* .dc = DCAlias;
+    CDC* dc = DCAlias;
     dc->color = BLACK;
 
     DocClear;
