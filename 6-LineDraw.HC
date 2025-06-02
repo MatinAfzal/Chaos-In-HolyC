@@ -15,18 +15,21 @@ U0 Main() {
             px1 = ms.pos.x;
             py1 = ms.pos.y;
             f1 = 'Y';
+	    Sleep(100);
         }
         else if (ms.lb && f1 == 'Y' && f2 == 'N') {
             px2 = ms.pos.x;
             py2 = ms.pos.y;
             f2 = 'Y';
+	    Sleep(100);
         }
         else if (f1 == 'Y' && f2 == 'Y') {
             DrawLine(dc, px1, py1, px2, py2);
             f1 = 'N';
             f2 = 'N';
+	    Sleep(100);
         }
-        Sleep(1);
+        Sleep(50);
     }
     DCFill(dc);
     DCDel(dc);
